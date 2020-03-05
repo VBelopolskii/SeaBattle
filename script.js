@@ -35,10 +35,14 @@ const show = {
     changeClass(elem, value) {
         elem.className = value;
     }
-}
+};
 
 const fire = (event) => {
     const target = event.target;
+    if(target.classList.length !== 0)
+    {
+        return;
+    }
     show.miss(target);
 
     play.updateData = "shot";
