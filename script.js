@@ -168,13 +168,11 @@ const init = () => {
     });
     record.addEventListener("dblclick", () => {
         localStorage.clear();
-        console.log(localStorage);
 
         play.record = 0;
         play.render();
     });
 
-    console.log(game);
 
 };
 
