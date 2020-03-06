@@ -166,8 +166,10 @@ const init = () => {
     again.addEventListener("click", () => {
         location.reload();
     });
-    record.addEventListener("dbclick", () => {
+    record.addEventListener("dblclick", () => {
         localStorage.clear();
+        console.log(localStorage);
+
         play.record = 0;
         play.render();
     });
